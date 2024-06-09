@@ -3,12 +3,13 @@
 header {
   width: 100%;
   height: 64px;
-  background-color: aqua;
+  background-color: rgb(203, 203, 203);
 }
 header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  align-self: center;
 }
 
 body {
