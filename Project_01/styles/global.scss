@@ -7,7 +7,18 @@ $btn-color-primary: #FCED70;
 
 /* Fonts and Text Hierarchy */
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
 
+
+
+h1 {
+
+    font-family: "Inter", "sans-serif";
+    font-size: 36px;
+    text-align: center;
+
+}
 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
@@ -36,4 +47,10 @@ body {
     background-color: $primary-background-color;
 }
 
+.hero-section img {
+
+    background-size: cover;
+    width: 100%;
+
+}
 

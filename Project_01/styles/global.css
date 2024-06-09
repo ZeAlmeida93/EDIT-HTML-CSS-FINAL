@@ -1,5 +1,11 @@
 /* Themes and Colours Custom Properties */
 /* Fonts and Text Hierarchy */
+h1 {
+  font-family: "Inter", "sans-serif";
+  font-size: 36px;
+  text-align: center;
+}
+
 header {
   width: 100%;
   height: 64px;
@@ -14,4 +20,9 @@ header nav ul {
 
 body {
   background-color: white;
+}
+
+.hero-section img {
+  background-size: cover;
+  width: 100%;
 }/*# sourceMappingURL=global.css.map */
