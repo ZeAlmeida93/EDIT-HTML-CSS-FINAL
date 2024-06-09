@@ -12,8 +12,28 @@ $btn-color-primary: #FCED70;
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
-
 header {
+
+    width: 100%;
+    height: 64px;
+    background-color: rgb(203, 203, 203);
+
+nav {
+
+    ul {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-self: center;
+    }
+}
+
+}
+
+body {
 
     background-color: $primary-background-color;
 }
+
+

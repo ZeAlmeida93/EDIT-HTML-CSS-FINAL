@@ -1,5 +1,17 @@
 /* Themes and Colours Custom Properties */
 /* Fonts and Text Hierarchy */
 header {
+  width: 100%;
+  height: 64px;
+  background-color: rgb(203, 203, 203);
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-self: center;
+}
+
+body {
   background-color: white;
 }/*# sourceMappingURL=global.css.map */
