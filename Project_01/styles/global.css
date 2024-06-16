@@ -6,6 +6,15 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-family: "Inter", "sans-serif";
+}
+
+button {
+  color: white;
+  background-color: #fced70;
+}
+
 header nav {
   width: 100%;
   height: 64px;
@@ -22,18 +31,30 @@ body {
   background-color: white;
 }
 
+.hero-section {
+  position: relative;
+}
 .hero-section img {
   background-size: cover;
   width: 100%;
 }
+.hero-section .text-description {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.categories {
+  margin-top: 3%;
+}
 
 .wrapper {
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2%;
   width: 100%;
-  margin: 20px;
 }
 .wrapper .product-card {
   width: 200px;

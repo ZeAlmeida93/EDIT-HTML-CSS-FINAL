@@ -1,7 +1,7 @@
 /* Themes and Colours Custom Properties */
 
-  $primary-background-color: #ffff;
-  $btn-color-primary: #fced70;
+$primary-background-color: #ffff;
+$btn-color-primary: #fced70;
 
 /* Fonts and Text Hierarchy */
 
@@ -12,6 +12,17 @@ h1 {
   font-family: "Inter", "sans-serif";
   font-size: 36px;
   text-align: center;
+}
+
+ h3 {
+
+  font-family: "Inter", "sans-serif";
+
+}
+
+button {
+  color: $primary-background-color;
+  background-color: $btn-color-primary;
 }
 
 // <uniquifier>: Use a unique and descriptive class name
@@ -33,27 +44,46 @@ header {
 }
 
 body {
-background-color: $primary-background-color;
+  background-color: $primary-background-color;
 }
 
-.hero-section img {
-  background-size: cover;
-  width: 100%;
+.hero-section {
+  position: relative;
+
+  img {
+    background-size: cover;
+    width: 100%;
+  }
+
+  .text-description {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+.categories {
+
+margin-top:3%;
+
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2%;
-    width: 100%;
-    margin: 20px;
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  width: 100%;
 
   .product-card {
     width: 200px;
     height: 200px;
     background-color: #fced70;
-
-  
   }
+
+
+
 }
+
+
