@@ -1,7 +1,7 @@
 /* Themes and Colours Custom Properties */
 
-$primary-background-color: #ffff;
-$btn-color-primary: #fced70;
+  $primary-background-color: #ffff;
+  $btn-color-primary: #fced70;
 
 /* Fonts and Text Hierarchy */
 
@@ -33,10 +33,27 @@ header {
 }
 
 body {
-  background-color: $primary-background-color;
+background-color: $primary-background-color;
 }
 
 .hero-section img {
   background-size: cover;
   width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    margin: 20px;
+
+  .product-card {
+    width: 200px;
+    height: 200px;
+    background-color: #fced70;
+
+  
+  }
 }

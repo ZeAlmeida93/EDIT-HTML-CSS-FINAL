@@ -25,4 +25,18 @@ body {
 .hero-section img {
   background-size: cover;
   width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  width: 100%;
+  margin: 20px;
+}
+.wrapper .product-card {
+  width: 200px;
+  height: 200px;
+  background-color: #fced70;
 }/*# sourceMappingURL=global.css.map */
