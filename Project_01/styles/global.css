@@ -10,8 +10,7 @@ h1 {
 h3 {
   font-family: "Inter", "sans-serif";
   color: white;
-  font-size: 15rem;
-  position: sticky;
+  font-size: 28px;
 }
 
 header nav {
@@ -30,9 +29,15 @@ body {
   background-color: white;
 }
 
-.button {
-  color: white;
+.primary-button {
+  color: #131313;
   background-color: #fced70;
+  font-size: medium;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  width: 50%;
 }
 
 .hero-section {
@@ -43,6 +48,9 @@ body {
   width: 100%;
 }
 .hero-section .text-description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   position: absolute;
   top: 10%;
   left: 10%;

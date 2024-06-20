@@ -3,6 +3,7 @@
 /* Themes and Colours Custom Properties */
 
 $primary-background-color: #ffff;
+$primary-type-color: #131313;
 $btn-color-primary: #fced70;
 
 /* Fonts and Text Hierarchy */
@@ -22,8 +23,7 @@ h1 {
 h3 {
   font-family: "Inter", "sans-serif";
   color: #ffff;
-  font-size: 15rem;
-
+  font-size: 28px;
 }
 
 header {
@@ -45,9 +45,16 @@ body {
   background-color: $primary-background-color;
 }
 
-.button {
-  color: $primary-background-color;
+.primary-button {
+  color: $primary-type-color;
   background-color: $btn-color-primary;
+  font-size: medium;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  
+  width: 50%;
 }
 
 .hero-section {
@@ -59,6 +66,9 @@ body {
   }
 
   .text-description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     position: absolute;
     top: 10%;
     left: 10%;
