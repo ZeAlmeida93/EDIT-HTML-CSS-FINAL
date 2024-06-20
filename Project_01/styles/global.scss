@@ -1,3 +1,5 @@
+/*IMPORTS */
+
 /* Themes and Colours Custom Properties */
 
 $primary-background-color: #ffff;
@@ -8,25 +10,21 @@ $btn-color-primary: #fced70;
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
 h1 {
   font-family: "Inter", "sans-serif";
   font-size: 36px;
   text-align: center;
 }
 
- h3 {
-
+h3 {
   font-family: "Inter", "sans-serif";
+  color: #ffff;
+  font-size: 15rem;
 
 }
-
-button {
-  color: $primary-background-color;
-  background-color: $btn-color-primary;
-}
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
 
 header {
   nav {
@@ -47,6 +45,11 @@ body {
   background-color: $primary-background-color;
 }
 
+.button {
+  color: $primary-background-color;
+  background-color: $btn-color-primary;
+}
+
 .hero-section {
   position: relative;
 
@@ -63,27 +66,46 @@ body {
 }
 
 .categories {
-
-margin-top:3%;
-
+  margin-top: 5%;
 }
 
 .wrapper {
   margin-top: 3%;
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 12%;
+  padding-right: 12%;
   justify-content: center;
   gap: 2%;
   width: 100%;
+  box-sizing: border-box;
 
-  .product-card {
-    width: 200px;
-    height: 200px;
-    background-color: #fced70;
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    gap: 2%;
   }
 
+  .product-card {
+    position: relative;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 390px;
+    height: 220px;
+    background-color: #fced70;
 
+    img {
+      display: flex;
+      width: 100%;
+      flex: 0 0 auto;
+      background-size: auto;
+    }
+  }
 
+  .product-description {
+    font-family: "Inter", "sans-serif";
+    position: absolute;
+    bottom: 12%;
+    left: 6%;
+  }
 }
-
-

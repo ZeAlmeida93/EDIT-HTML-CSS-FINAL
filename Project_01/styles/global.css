@@ -1,3 +1,4 @@
+/*IMPORTS */
 /* Themes and Colours Custom Properties */
 /* Fonts and Text Hierarchy */
 h1 {
@@ -8,11 +9,9 @@ h1 {
 
 h3 {
   font-family: "Inter", "sans-serif";
-}
-
-button {
   color: white;
-  background-color: #fced70;
+  font-size: 15rem;
+  position: sticky;
 }
 
 header nav {
@@ -31,6 +30,11 @@ body {
   background-color: white;
 }
 
+.button {
+  color: white;
+  background-color: #fced70;
+}
+
 .hero-section {
   position: relative;
 }
@@ -45,19 +49,42 @@ body {
 }
 
 .categories {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .wrapper {
   margin-top: 3%;
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 12%;
+  padding-right: 12%;
   justify-content: center;
   gap: 2%;
   width: 100%;
+  box-sizing: border-box;
+}
+.wrapper .row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  gap: 2%;
 }
 .wrapper .product-card {
-  width: 200px;
-  height: 200px;
+  position: relative;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 390px;
+  height: 220px;
   background-color: #fced70;
+}
+.wrapper .product-card img {
+  display: flex;
+  width: 100%;
+  flex: 0 0 auto;
+  background-size: auto;
+}
+.wrapper .product-description {
+  font-family: "Inter", "sans-serif";
+  position: absolute;
+  bottom: 12%;
+  left: 6%;
 }/*# sourceMappingURL=global.css.map */
