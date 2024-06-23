@@ -13,16 +13,49 @@ h3 {
   font-size: 28px;
 }
 
+header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+  background-color: white;
+  box-sizing: content-box;
+}
 header nav {
   width: 100%;
   height: 64px;
-  background-color: rgb(203, 203, 203);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+header nav .logo {
+  width: 15%;
+  height: 65px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+header nav .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 4vw;
+  margin-right: 20px;
 }
 header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-self: center;
+}
+header nav ul li {
+  font-family: "Inter", "sans-serif";
+}
+header nav ul .title-menu {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-content: center;
 }
 
 body {
@@ -60,8 +93,13 @@ body {
   margin-top: 5%;
 }
 
+.flex {
+  display: flex;
+}
+
 .wrapper {
   margin-top: 3%;
+  margin-bottom: 3%;
   padding-left: 12%;
   padding-right: 12%;
   justify-content: center;
@@ -95,4 +133,27 @@ body {
   position: absolute;
   bottom: 12%;
   left: 6%;
+}
+
+.orange-section {
+  display: flex;
+  width: 100%;
+  height: 256px;
+  background-color: #F7EEE3;
+  overflow: hidden;
+}
+.orange-section img {
+  display: flex;
+  width: 50%;
+  height: -moz-max-content;
+  height: max-content;
+  align-self: center;
+}
+.orange-section .policies-text {
+  font-family: "Inter", "sans-serif";
+  line-height: 16px;
+  font-size: 12px;
+  align-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }/*# sourceMappingURL=global.css.map */
