@@ -1,6 +1,14 @@
 /*IMPORTS */
-/* Themes and Colours Custom Properties */
-/* Fonts and Text Hierarchy */
+.top-margin {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.button {
+  color: white;
+  background-color: #fced70;
+}
+
 h1 {
   font-family: "Inter", "sans-serif";
   font-size: 36px;
@@ -120,13 +128,11 @@ body {
   flex-grow: 1;
   width: 390px;
   height: 220px;
-  background-color: #fced70;
 }
 .wrapper .product-card img {
   display: flex;
   width: 100%;
-  flex: 0 0 auto;
-  background-size: auto;
+  /*object-fit: cover; */
 }
 .wrapper .product-description {
   font-family: "Inter", "sans-serif";
@@ -144,7 +150,7 @@ body {
 }
 .orange-section img {
   display: flex;
-  width: 50%;
+  max-width: 50%;
   height: -moz-max-content;
   height: max-content;
   align-self: center;
@@ -156,4 +162,13 @@ body {
   align-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 45%;
+}
+
+.gallery-section .gallery-img {
+  max-width: 80%;
+}
+
+.nomad-section {
+  background-color: #F7EEE3;
 }/*# sourceMappingURL=global.css.map */

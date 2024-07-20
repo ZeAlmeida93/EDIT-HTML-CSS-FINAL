@@ -14,7 +14,8 @@ Main Goals:
 
 Link to my figma layout --> https://www.figma.com/design/ceCZJnNDjqU0u69Y31adJt/Edit---Loja-(Copy)?node-id=0-1&t=zcF9fDrMV155jl4c-1
 
-#3 --> Export and Organize assets from my figma file.Mostly images and videos and understand and what different sizes are needed to create my data-sets in order to enhance my webpage in terms of performance.
+#3 --> Export and Organize assets from my figma file.
+Mostly images and videos and understand and what different sizes are needed to create my data-sets in order to enhance my webpage in terms of performance.
 
 #4 --> Set a "Mobile-First" approach. How? --> Maybe by starting first with the smallest breakpoints. 
 

@@ -1,0 +1,9 @@
+@import 'variables.scss' ;
+
+
+.top-margin {
+
+margin-top: ($top-margin);
+margin-bottom: ($bottom-margin);
+
+}
