@@ -1,21 +1,9 @@
 /*IMPORTS */
-@import 'sass-partials/variables.scss';
-@import 'sass-partials/margins.scss';
-@import 'sass-partials/components.scss';
-
-
-
-h1 {
-  font-family: "Inter", "sans-serif";
-  font-size: 36px;
-  text-align: center;
-}
-
-h3 {
-  font-family: "Inter", "sans-serif";
-  color: #ffff;
-  font-size: 28px;
-}
+@import "sass-partials/variables.scss";
+@import "sass-partials/margins.scss";
+@import "sass-partials/components.scss";
+@import "sass-partials/flex-grids.scss";
+@import "sass-partials/type.scss";
 
 header {
   display: flex;
@@ -36,8 +24,6 @@ header {
     .logo {
       width: 15%;
       height: 65px;
-
-      background-color: aqua;
       border-radius: 5px;
     }
 
@@ -60,7 +46,6 @@ header {
       }
 
       .title-menu {
-
         display: flex;
         gap: 10px;
         flex-direction: row;
@@ -72,17 +57,6 @@ header {
 
 body {
   background-color: $primary-background-color;
-}
-
-.primary-button {
-  color: $primary-type-color;
-  background-color: $btn-color-primary;
-  font-size: medium;
-  text-transform: uppercase;
-  height: 50px;
-  border-radius: 4px;
-  border: 0px;
-  width: 50%;
 }
 
 .hero-section {
@@ -107,11 +81,6 @@ body {
   margin-top: 5%;
 }
 
-.flex {
-
-  display: flex;
-}
-
 .wrapper {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -125,7 +94,6 @@ body {
   .row {
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
     gap: 2%;
   }
 
@@ -136,12 +104,11 @@ body {
     flex-grow: 1;
     width: 390px;
     height: 220px;
-  
 
     img {
       display: flex;
       width: 100%;
-     /*object-fit: cover; */
+      object-fit: cover;
     }
   }
 
@@ -153,62 +120,90 @@ body {
   }
 }
 
-
 .orange-section {
-display: flex;
-width: 100%;
-height: 256px;
-background-color: #F7EEE3;
-overflow: hidden;
-
-img {
-
   display: flex;
-  max-width: 50%;
-  height: max-content;
-  align-self: center;
+  width: 100%;
+  height: 256px;
+  background-color: #f7eee3;
+  overflow: hidden;
+
+  img {
+    display: flex;
+    max-width: 50%;
+    height: max-content;
+    align-self: center;
+  }
+
+  .policies-text {
+    font-family: "Inter", "sans-serif";
+    line-height: 16px;
+    font-size: 12px;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 45%;
+  }
 }
-
-
-.policies-text {
-  font-family: "Inter", "sans-serif";
-  line-height: 16px;
-  font-size: 12px;
-  align-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 45%;
-
-
-
-}
-
-}
-
-
 
 .gallery-section {
-
-.gallery-img {
-
-  max-width: 80%;
-
-
-
+  .gallery-img {
+    max-width: 80%;
+  }
 }
-
-}
-
 
 .nomad-section {
+  background-color: ($secondary-background-color);
 
-background-color: ($secondary-background-color);
+  .description-nomad {
+    width: 60%;
+    align-content: center;
+    align-self: start;
 
+    justify-content: center;
+    @include margins;
+
+    .title-nomad {
+      font-size: large;
+      font-family: "Inter";
+      font-style: italic;
+      text-decoration: underline;
+      letter-spacing: 16px;
+    }
+
+    .text-nomad {
+      font-size: medium;
+      width: 50%;
+      line-height: 2rem;
+    }
+  }
+
+  img {
+    width: 40%;
+  }
+}
+
+.social-feed-section {
+ 
+ 
+
+  .social-gallery {
+    @include margins;
+  
+    overflow: scroll;
+ 
+
+    img {
+      
+      object-fit: cover;
+    }
+  }
+}
+
+.bottom-banner {
 
 img {
 
-
-  
+  width: 100%;
 }
 
 }

@@ -9,6 +9,49 @@
   background-color: #fced70;
 }
 
+.primary-button {
+  color: #131313;
+  background-color: #fced70;
+  font-size: medium;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-start {
+  justify-content: start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
 h1 {
   font-family: "Inter", "sans-serif";
   font-size: 36px;
@@ -19,6 +62,14 @@ h3 {
   font-family: "Inter", "sans-serif";
   color: white;
   font-size: 28px;
+}
+
+p {
+  font-family: "Inter", "sans-serif";
+}
+
+span {
+  font-family: "Inter", "sans-serif";
 }
 
 header {
@@ -40,7 +91,6 @@ header nav {
 header nav .logo {
   width: 15%;
   height: 65px;
-  background-color: aqua;
   border-radius: 5px;
 }
 header nav .navbar {
@@ -70,17 +120,6 @@ body {
   background-color: white;
 }
 
-.primary-button {
-  color: #131313;
-  background-color: #fced70;
-  font-size: medium;
-  text-transform: uppercase;
-  height: 50px;
-  border-radius: 4px;
-  border: 0px;
-  width: 50%;
-}
-
 .hero-section {
   position: relative;
 }
@@ -101,10 +140,6 @@ body {
   margin-top: 5%;
 }
 
-.flex {
-  display: flex;
-}
-
 .wrapper {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -118,7 +153,6 @@ body {
 .wrapper .row {
   display: flex;
   flex-direction: row;
-  margin-top: 2%;
   gap: 2%;
 }
 .wrapper .product-card {
@@ -132,7 +166,8 @@ body {
 .wrapper .product-card img {
   display: flex;
   width: 100%;
-  /*object-fit: cover; */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .wrapper .product-description {
   font-family: "Inter", "sans-serif";
@@ -145,7 +180,7 @@ body {
   display: flex;
   width: 100%;
   height: 256px;
-  background-color: #F7EEE3;
+  background-color: #f7eee3;
   overflow: hidden;
 }
 .orange-section img {
@@ -171,4 +206,45 @@ body {
 
 .nomad-section {
   background-color: #F7EEE3;
+}
+.nomad-section .description-nomad {
+  width: 60%;
+  align-content: center;
+  align-self: start;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.nomad-section .description-nomad .title-nomad {
+  font-size: large;
+  font-family: "Inter";
+  font-style: italic;
+  text-decoration: underline;
+  letter-spacing: 16px;
+}
+.nomad-section .description-nomad .text-nomad {
+  font-size: medium;
+  width: 50%;
+  line-height: 2rem;
+}
+.nomad-section img {
+  width: 40%;
+}
+
+.social-feed-section .social-gallery {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: scroll;
+}
+.social-feed-section .social-gallery img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bottom-banner img {
+  width: 100%;
 }/*# sourceMappingURL=global.css.map */

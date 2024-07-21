@@ -7,3 +7,12 @@ margin-top: ($top-margin);
 margin-bottom: ($bottom-margin);
 
 }
+
+@mixin margins {
+
+    margin-top: ($top-margin);
+    margin-bottom: ($bottom-margin);
+    margin-left: ($left-margin);
+    margin-right: ($right-margin);
+
+}
