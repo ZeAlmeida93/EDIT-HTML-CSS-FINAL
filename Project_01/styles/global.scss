@@ -22,7 +22,7 @@ header {
     margin: 20px;
 
     .logo {
-      width: 15%;
+      width: 12%;
       height: 65px;
       border-radius: 5px;
     }
@@ -190,6 +190,7 @@ body {
     @include margins;
   
     overflow: scroll;
+    margin-right:0;
  
 
     img {
@@ -201,9 +202,104 @@ body {
 
 .bottom-banner {
 
-img {
+  img {
+
+    width: 100%;
+  }
+
+  &.bg-white{
+    background: white;
+  }
+
+}
+
+.subscribe {
 
   width: 100%;
+  height: 18dvh;
+background-color: #514F4D;
+
+}
+
+
+.footer {
+
+width: 100%;
+height: 45dvh;
+background-color: #131313;
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+
+    h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          text-decoration: none;
+          color: var($primary-background-color);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .contact-info {
+      p, address {
+        margin: 0px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: var($primary-background-color);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+
+  margin-top: 20px;
+
+  p {
+    margin: 5px 0;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 }
