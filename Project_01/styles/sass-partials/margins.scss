@@ -16,3 +16,12 @@ margin-bottom: ($bottom-margin);
     margin-right: ($right-margin);
 
 }
+
+@mixin paddings {
+
+    padding-top: ($top-margin);
+    padding-bottom: ($bottom-margin);
+    padding-left: ($left-margin);
+    padding-right: ($right-margin);
+
+}

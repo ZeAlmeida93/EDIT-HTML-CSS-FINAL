@@ -5,6 +5,22 @@
 @import "sass-partials/flex-grids.scss";
 @import "sass-partials/type.scss";
 
+body {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier();
+  background-color: $primary-background-color;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+
 header {
   display: flex;
   position: sticky;
@@ -12,6 +28,9 @@ header {
   z-index: 4;
   background-color: white;
   box-sizing: content-box;
+  animation-name: push-in-top;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier();
 
   nav {
     width: 100%;
@@ -20,6 +39,15 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
+
+    @keyframes push-in-top {
+      from {
+        transform: translateY(-200px);
+      }
+      to {
+        transform: translateY(0px);
+      }
+    }
 
     .logo {
       width: 12%;
@@ -43,6 +71,7 @@ header {
 
       li {
         font-family: "Inter", "sans-serif";
+        transition: 0.4s;
       }
 
       .title-menu {
@@ -50,13 +79,15 @@ header {
         gap: 10px;
         flex-direction: row;
         align-content: center;
+        transition: 0.4s;
+      }
+
+      .title-menu:hover {
+        opacity: 40%;
+        cursor: pointer;
       }
     }
   }
-}
-
-body {
-  background-color: $primary-background-color;
 }
 
 .hero-section {
@@ -95,6 +126,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2%;
+    margin-bottom: 2%;
   }
 
   .product-card {
@@ -104,12 +136,28 @@ body {
     flex-grow: 1;
     width: 390px;
     height: 220px;
+    overflow: hidden;
 
     img {
       display: flex;
       width: 100%;
       object-fit: cover;
+
+      transition: 0.5s;
+      // animation-name: scale-on-hover;
+      // animation-duration: 0.5s;
     }
+
+    img:hover {
+      transform: scale(1.08);
+      cursor: pointer;
+    }
+
+    // @keyframes scale-on-hover {
+    //  from {transform: scale(100%);}
+    //  to {transform: scale(110%);}
+
+    // }
   }
 
   .product-description {
@@ -147,7 +195,7 @@ body {
 
 .gallery-section {
   .gallery-img {
-    max-width: 80%;
+    max-width: 30%;
   }
 }
 
@@ -183,80 +231,158 @@ body {
 }
 
 .social-feed-section {
- 
- 
-
   .social-gallery {
     @include margins;
-  
+
     overflow: scroll;
-    margin-right:0;
- 
+    margin-right: 0;
 
     img {
-      
+      width: 30%;
       object-fit: cover;
     }
   }
 }
 
 .bottom-banner {
-
   img {
-
     width: 100%;
   }
 
-  &.bg-white{
+  &.bg-white {
     background: white;
   }
-
 }
 
 .subscribe {
-
   width: 100%;
-  height: 18dvh;
-background-color: #514F4D;
 
-}
+  background-color: #514f4d;
+
+  .subscribe-container {
+    @include paddings;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .input-container {
+      border-radius: 6px;
+      border: solid 1px $secondary-background-color;
+      overflow: hidden;
+      width: auto;
+      height: 50px;
+      display: flex;
+      align-items: center;
+
+      input {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+        background: none;
+        box-sizing: border-box;
+        -webkit-appearance: none; /* Remove default styling on WebKit browsers */
+        -moz-appearance: none; /* Remove default styling on Firefox */
+        appearance: none; /* Remove default styling on modern browsers */
+      }
+
+      input::placeholder {
+
+        color: #f7eee3;
+        opacity: 50%;
+      }
 
 
-.footer {
+      .input-type {
+        width: 14rem;
+        padding: 15px;
+        color: #f7eee3;
 
-width: 100%;
-height: 45dvh;
-background-color: #131313;
+      
+      }
+
+      .subscription-button {
+        height: inherit;
+        box-sizing: content-box;
+        transform: translateX(2px);
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 0.75rem;
+      }
+
+      .subscription-button:hover {
+
+        cursor: pointer;
+      }
 
 
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-
-  .footer-column {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px 0;
-
-    h4 {
-      font-size: 16px;
-      margin-bottom: 10px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .social-icons {
+      display: flex;
+      gap: 20%;
 
-      li {
-        margin-bottom: 8px;
+      img {
+        width: 3.8rem;
+      }
+    }
+  }
+}
 
+.footer {
+  width: 100%;
+
+  background-color: #131313;
+  font-family: "Inter", "sans-serif";
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    @include paddings;
+    background-color: #131313;
+    flex-wrap: wrap;
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px 0;
+
+      h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: $primary-background-color;
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 8px;
+
+          a {
+            text-decoration: none;
+            color: $primary-background-color;
+            font-weight: 300;
+            font-size: 14px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      p {
+        color: $primary-background-color;
+      }
+
+      .contact-info {
         a {
           text-decoration: none;
-          color: var($primary-background-color);
+          color: $primary-background-color;
 
           &:hover {
             text-decoration: underline;
@@ -264,15 +390,20 @@ background-color: #131313;
         }
       }
     }
+  }
 
-    .contact-info {
-      p, address {
-        margin: 0px 0;
-      }
+  .footer-bottom {
+    @include paddings;
+
+    p {
+      margin: 5px 0;
+      color: $primary-background-color;
+      font-size: 14px;
 
       a {
         text-decoration: none;
-        color: var($primary-background-color);
+        color: $primary-background-color;
+        font-size: 14px;
 
         &:hover {
           text-decoration: underline;
@@ -280,26 +411,4 @@ background-color: #131313;
       }
     }
   }
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 10px;
-
-  margin-top: 20px;
-
-  p {
-    margin: 5px 0;
-
-    a {
-      text-decoration: none;
-      color: inherit;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
 }
