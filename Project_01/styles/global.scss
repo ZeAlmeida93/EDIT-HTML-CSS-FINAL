@@ -53,6 +53,13 @@ header {
       width: 12%;
       height: 65px;
       border-radius: 5px;
+      transition: 0.4s;
+    }
+
+    .logo:hover {
+
+      opacity: 40%;
+      cursor: pointer;
     }
 
     .navbar {
