@@ -4,6 +4,7 @@
 @import "sass-partials/components.scss";
 @import "sass-partials/flex-grids.scss";
 @import "sass-partials/type.scss";
+@import "sass-partials/breakpoints.scss";
 
 body {
   animation-name: fade-in;
@@ -137,6 +138,8 @@ header {
   }
 
   .product-card {
+
+  
     position: relative;
     display: flex;
     flex-shrink: 1;
@@ -213,6 +216,7 @@ header {
     width: 60%;
     align-content: center;
     align-self: start;
+    gap:4rem;
 
     justify-content: center;
     @include margins;
@@ -226,7 +230,7 @@ header {
     }
 
     .text-nomad {
-      font-size: medium;
+      font-size: clamp(1.2rem, 0.900rem + 0.4486vw, 1.65rem);
       width: 50%;
       line-height: 2rem;
     }

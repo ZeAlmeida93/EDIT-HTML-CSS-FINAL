@@ -18,6 +18,12 @@
   border-radius: 4px;
   border: 0px;
   width: 50%;
+  transition: 0.4s;
+}
+
+.primary-button:hover {
+  background-color: white;
+  cursor: pointer;
 }
 
 .flex {
@@ -255,6 +261,7 @@ header nav ul .title-menu:hover {
   width: 60%;
   align-content: center;
   align-self: start;
+  gap: 4rem;
   justify-content: center;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -269,7 +276,7 @@ header nav ul .title-menu:hover {
   letter-spacing: 16px;
 }
 .nomad-section .description-nomad .text-nomad {
-  font-size: medium;
+  font-size: clamp(1.2rem, 0.9rem + 0.4486vw, 1.65rem);
   width: 50%;
   line-height: 2rem;
 }

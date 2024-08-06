@@ -1,18 +1,26 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .button {
-    color: $primary-background-color;
-    background-color: $btn-color-primary;
-  }
+  color: $primary-background-color;
+  background-color: $btn-color-primary;
+}
+
+.primary-button {
+  color: $primary-type-color;
+  background-color: $btn-color-primary;
+  font-size: medium;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  width: 50%;
+  transition: 0.4s;
+}
+
+.primary-button:hover {
+  background-color: $primary-background-color;
+  cursor: pointer;
   
 
-  .primary-button {
-    color: $primary-type-color;
-    background-color: $btn-color-primary;
-    font-size: medium;
-    text-transform: uppercase;
-    height: 50px;
-    border-radius: 4px;
-    border: 0px;
-    width: 50%;
-  }
+
+}
