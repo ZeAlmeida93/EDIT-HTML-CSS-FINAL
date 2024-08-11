@@ -17,5 +17,6 @@
 
 .primary-button:hover {
   background-color: white;
+  border: 1px solid #fced70;
   cursor: pointer;
 }/*# sourceMappingURL=components.css.map */
