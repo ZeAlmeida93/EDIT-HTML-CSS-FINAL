@@ -211,15 +211,21 @@ header nav .title-menu:hover {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  gap: 2%;
 }
 .categories .category-wrapper .product-card {
   position: relative;
   display: flex;
   flex-shrink: 1;
-  flex-grow: 1;
+  flex-grow: 0;
   width: 390px;
   height: 220px;
   overflow: hidden;
+  margin-bottom: 2%;
 }
 .categories .category-wrapper .product-card img {
   display: flex;
