@@ -16,7 +16,7 @@
   text-transform: uppercase;
   height: 50px;
   border-radius: 4px;
-  border: 0px;
+  border: 1px solid #fced70;
   width: 50%;
   transition: 0.4s;
 }
@@ -191,8 +191,10 @@ header nav .title-menu:hover {
   position: relative;
 }
 .hero-section img {
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  min-height: 55.18dvh;
 }
 .hero-section .text-description {
   display: flex;
@@ -216,6 +218,12 @@ header nav .title-menu:hover {
   margin-bottom: 3%;
   justify-content: center;
   gap: 2%;
+  transition: 0.4s;
+}
+@media (max-width: 768px) {
+  .categories .category-wrapper {
+    margin-top: 6%;
+  }
 }
 .categories .category-wrapper .product-card {
   position: relative;
@@ -390,6 +398,11 @@ header nav .title-menu:hover {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .subscribe .subscribe-container .input-container {
+    flex-direction: column;
+  }
+}
 .subscribe .subscribe-container .input-container input {
   margin: 0;
   padding: 0;
@@ -422,12 +435,22 @@ header nav .title-menu:hover {
   padding-right: 15px;
   font-size: 0.75rem;
 }
+@media (max-width: 768px) {
+  .subscribe .subscribe-container .input-container .subscription-button {
+    display: none;
+  }
+}
 .subscribe .subscribe-container .input-container .subscription-button:hover {
   cursor: pointer;
 }
 .subscribe .subscribe-container .social-icons {
   display: flex;
   gap: 20%;
+}
+@media (max-width: 768px) {
+  .subscribe .subscribe-container .social-icons {
+    display: none;
+  }
 }
 .subscribe .subscribe-container .social-icons img {
   width: 3.8rem;
@@ -454,10 +477,11 @@ header nav .title-menu:hover {
   margin: 10px 0;
 }
 .footer .footer-container .footer-column h4 {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 10px;
   color: white;
   font-weight: 700;
+  line-height: 1.1rem;
 }
 .footer .footer-container .footer-column ul {
   list-style: none;
@@ -465,12 +489,17 @@ header nav .title-menu:hover {
 }
 .footer .footer-container .footer-column ul li {
   margin-bottom: 8px;
+  margin: 5px 0;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.1rem;
 }
 .footer .footer-container .footer-column ul li a {
   text-decoration: none;
   color: white;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.1rem;
 }
 .footer .footer-container .footer-column ul li a:hover {
   text-decoration: underline;
@@ -486,20 +515,29 @@ header nav .title-menu:hover {
   text-decoration: underline;
 }
 .footer .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
+.footer .footer-bottom address {
+  margin: 5px 0;
+  color: white;
+  font-size: 0.875rem;
+}
 .footer .footer-bottom p {
   margin: 5px 0;
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .footer .footer-bottom p a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .footer .footer-bottom p a:hover {
   text-decoration: underline;

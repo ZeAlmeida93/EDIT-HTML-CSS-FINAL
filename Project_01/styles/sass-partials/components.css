@@ -10,7 +10,7 @@
   text-transform: uppercase;
   height: 50px;
   border-radius: 4px;
-  border: 0px;
+  border: 1px solid #fced70;
   width: 50%;
   transition: 0.4s;
 }
