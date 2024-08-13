@@ -33,19 +33,19 @@
 
         <ul class="navbar">
 
-           
+
 
             <div class="title-menu">
                 <li>Seating</li> <svg width="15" height="15" viewBox="0 0 9 5" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 0.5L3.74742 3.63991C4.14584 4.09524 4.85417 4.09524 5.25258 3.63991L8 0.5"
-                    stroke="black" stroke-linecap="round" />
-            </svg>
-               
-               
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.5L3.74742 3.63991C4.14584 4.09524 4.85417 4.09524 5.25258 3.63991L8 0.5"
+                        stroke="black" stroke-linecap="round" />
+                </svg>
+
+
             </div>
 
-        
+
 
             <div class="title-menu">
                 <li>Living Room</li> <svg width="15" height="15" viewBox="0 0 9 5" fill="none"
@@ -93,11 +93,13 @@
 
 <body>
     <section id="hero-banner" class="hero-section">
-
-        <img src="assets/hero-section-background-image-1-desktop.jpg" alt="">
+        <picture>
+            <source media="(min-width:769px)" srcset="assets/hero-section-background-image-1-desktop.jpg">
+            <img src="assets-cristian/header.png" alt="">
+        </picture>
 
         <div class="text-description">
-            <h3>Clever designs, delivered free</h3>
+            <h3 class="hero-section-text-description">Clever designs, delivered free</h3>
             <button class="primary-button">Shop Bedroom</button>
         </div>
 
@@ -215,11 +217,48 @@
 
     </section>
 
+    <section class="orange-section">
+
+        <div class="container">
+
+
+            <div class="policies-text">
+                <img src="assets-cristian/icon-truck.png" alt="">
+                <p> Fast & free shipping
+                    Every single order ships for free. No minimums, no tiers, no fine print whatsoever. </p>
+             
+            </div>
+
+            <div class="policies-text">
+                <img src="assets-cristian/icon-sofa.png" alt="">
+                <p>
+                    Modular, easy-to-move design
+                    Our innovative modular design is driven by the belief that furniture should fit this home, and the
+                    next one.</p>
+
+            </div>
+
+       
+
+        <div class="policies-text">
+            <img src="assets-cristian/icon-trees.png" alt="">
+            <p>
+                Durable, premium materials
+                We use materials like sustainably-forested wood, strengthened steel hardware, and top-grain Italian
+                leather.</p>
+        </div>
+
+
+        </div>
+
+
+    </section>
+
     <section id="gallery" class="gallery-section">
 
-        <h1 class="top-margin">A New Definition for Your Home</h1>
+        <h1>A New Definition for Your Home</h1>
 
-        <div class="wrapper flex row">
+        <div class="gallery-container">
 
 
 
@@ -242,7 +281,7 @@
 
             <div class="flex f-col description-nomad">
                 <span class="title-nomad">NOMAD</span>
-                <span class="text-nomad">The Ambid system works beautifully. It's comfortable, absolutely solid, and
+                <span class="text-nomad"><b>The Ambid</b> system works beautifully. It's comfortable, absolutely solid, and
                     looks great.</span>
                 <p>Shop Now</p>
             </div>
@@ -255,113 +294,117 @@
     </section>
 
     <section id="social-feed" class="social-feed-section">
-    <h1 class="top-margin">Shop these real-life spaces</h1>
+        <h1>Shop these real-life spaces</h1>
 
-    <div class="social-gallery">
-    <div class="flex gap-20">
-<img src="assets-cristian/carousel/Kettle-Side-Table.webp" alt="">
-<img src="assets-cristian/carousel/Nomad-Leather.webp" alt="">
-<img src="assets-cristian/carousel/Nomad-Velvet.webp" alt="">
-<img src="assets-cristian/carousel/Range-Fabric-Stone-Gray.webp" alt="">
-<img src="assets-cristian/carousel/Kettle-Side-Table.webp" alt="">
-<img src="assets-cristian/carousel/Nomad-Leather.webp" alt="">
+        <div class="social-gallery">
+            <div class="flex gap-20">
+                <img src="assets-cristian/carousel/Kettle-Side-Table.webp" alt="">
+                <img src="assets-cristian/carousel/Nomad-Leather.webp" alt="">
+                <img src="assets-cristian/carousel/Nomad-Velvet.webp" alt="">
+                <img src="assets-cristian/carousel/Range-Fabric-Stone-Gray.webp" alt="">
+                <img src="assets-cristian/carousel/Kettle-Side-Table.webp" alt="">
+                <img src="assets-cristian/carousel/Nomad-Leather.webp" alt="">
 
-</div>
-</div>
-</section>
-
-
-<section id="bottom-banner" class="bottom-banner">
-    <h1 class="top-margin">Modular, easy-to-move design</h1>
-    <video width="100%" height="auto" autoplay muted loop>
-        <source src="assets-cristian/background-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-    
-
-    <div class="flex flex-center top-margin">
-    <button  style="width: 20%;"  class="primary-button">Shop Seating</button>
-</div>
-</section>
-
-<section id="subscribe" class="subscribe">
-
-<div class="subscribe-container">
-
-    <div class="input-container">
-<input class="input-type" type="text" placeholder="Sign up for enthralling couch reads">
-<button class="subscription-button">SUBSCRIBE</button>
-</div>
-
-<div class="social-icons">
-<img src="assets-cristian/socials/icons8-facebook.svg" alt="">
-<img src="assets-cristian/socials/icons8-instagram.svg" alt="">
-<img src="assets-cristian/socials/icons8-youtube.svg" alt="">
-
-</div>
-
-</div>
-
-
-
-
-
-</section>
-
-<section id="footer" class="footer">
-
-    <div class="footer-container">
-        <div class="footer-column">
-          <h4>Shopping Services</h4>
-          <ul>
-            <li><a href="#">Schedule Consultation</a></li>
-            <li><a href="#">Showrooms</a></li>
-            <li><a href="#">Trade Program</a></li>
-            <li><a href="#">Outlet</a></li>
-          </ul>
+            </div>
         </div>
-        <div class="footer-column">
-          <h4>About</h4>
-          <ul>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Financing</a></li>
-            <li><a href="#">Patents</a></li>
-            <li><a href="#">Our Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="#">Look Up Order Status</a></li>
-            <li><a href="#">Assembly Instructions</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Shipping & Delivery</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Refer a Friend</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Contact Customer Experience</h4>
-          <ul>
-          <li>Email: <a href="mailto:support@template.com">support@template.com</a></li>
-          <li>Text: 224-628-7769</li>
-          <li>Hours:</li>
-          <li>Monday to Friday — 10a to 8p EST</li>
-          <li>Saturday to Sunday — 10a to 2p EST</li>
-        </ul>
-        </div> 
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom-container">
-        <p>© 2023 Template</p>
-        <p><a href="#">Terms</a> - <a href="#">Accessibility</a> - <a href="#">Sitemap</a> - <a href="#">Privacy</a></p>       
-    </div>
-        <address>15 W 27th Street, 9th Floor New York, NY, 10001</address>
-      </div>
+    </section>
 
-</section>
+
+    <section id="bottom-banner" class="bottom-banner">
+        <h1>Modular, easy-to-move design</h1>
+        <video width="100%" height="auto" autoplay muted loop>
+            <source src="assets-cristian/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <div class="flex flex-center top-margin">
+            <button class="primary-button">Shop Seating</button>
+        </div>
+    </section>
+
+    <section id="subscribe" class="subscribe">
+
+        <div class="subscribe-container">
+
+            <div class="input-container">
+                <input class="input-type" type="text" placeholder="Sign up for enthralling couch reads">
+                <button class="subscription-button">SUBSCRIBE</button>
+             
+            </div>
+
+            <div class="social-icons">
+                <img src="assets-cristian/socials/icons8-facebook.svg" alt="">
+                <img src="assets-cristian/socials/icons8-instagram.svg" alt="">
+                <img src="assets-cristian/socials/icons8-youtube.svg" alt="">
+
+            </div>
+
+        </div>
+
+        <button class="subscription-button-mobile">SUBSCRIBE</button>
+
+
+
+
+
+    </section>
+
+    <section id="footer" class="footer">
+
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Shopping Services</h4>
+                <ul>
+                    <li><a href="#">Schedule Consultation</a></li>
+                    <li><a href="#">Showrooms</a></li>
+                    <li><a href="#">Trade Program</a></li>
+                    <li><a href="#">Outlet</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Patents</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Look Up Order Status</a></li>
+                    <li><a href="#">Assembly Instructions</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Refer a Friend</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Customer Experience</h4>
+                <ul>
+                    <li>Email: <a href="mailto:support@template.com">support@template.com</a></li>
+                    <li>Text: 224-628-7769</li>
+                    <li>Hours:</li>
+                    <li>Monday to Friday — 10a to 8p EST</li>
+                    <li>Saturday to Sunday — 10a to 2p EST</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>© 2023 Template</p>
+                <p><a href="#">Terms</a> - <a href="#">Accessibility</a> - <a href="#">Sitemap</a> - <a
+                        href="#">Privacy</a></p>
+            </div>
+            <address>15 W 27th Street, 9th Floor New York, NY, 10001</address>
+        </div>
+
+    </section>
 
 </body>
 

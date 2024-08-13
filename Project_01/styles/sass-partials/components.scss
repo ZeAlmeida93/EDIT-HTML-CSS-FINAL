@@ -18,6 +18,7 @@
 }
 
 .primary-button:hover {
+  color: $btn-color-primary-hover;
   background-color: $primary-background-color;
   border: 1px solid $btn-color-primary;
   cursor: pointer;

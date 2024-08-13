@@ -16,6 +16,7 @@
 }
 
 .primary-button:hover {
+  color: #debd39;
   background-color: white;
   border: 1px solid #fced70;
   cursor: pointer;
