@@ -71,7 +71,8 @@ header {
     .logo {
       // min-width: 10%;
 
-      width: 14%;
+      width: 60%;
+      min-width: 140px;
       height: 65px;
       border-radius: 5px;
       transition: 0.4s;
@@ -481,6 +482,10 @@ header {
   &.bg-white {
     background: white;
   }
+
+  .primary-button {
+    width: 100%;
+  }
 }
 
 .subscribe {
@@ -490,7 +495,7 @@ header {
   @media (max-width: $breakpoint-md) {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-items: center;
   }
 
   .subscribe-container {
@@ -591,7 +596,14 @@ header {
     display: none;
 
     @media (max-width: $breakpoint-md) {
-      display: none;
+      background-color: $subscribe-btn-color;
+      margin-bottom: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.625rem;
+      width: 90%;
+      height:54px;
     }
   }
 }
@@ -759,16 +771,10 @@ header {
       transition: 0.4s;
 
       .product-image {
-      
-      .product-image:hover {
-        cursor: pointer;
-
-
+        .product-image:hover {
+          cursor: pointer;
+        }
       }
-
-
-      }
-
 
       img:hover {
         cursor: pointer;
@@ -790,8 +796,426 @@ header {
         margin-top: 2%;
         width: inherit;
         line-height: 1rem;
-        color: #9C9C9C;
+        color: #9c9c9c;
       }
+    }
+  }
+}
+
+.bottom-cta {
+  @include margins;
+  display: flex;
+  justify-content: center;
+
+  .primary-button {
+    width: 20%;
+
+    @media (max-width: $breakpoint-md) {
+      width: 45%;
+    }
+  }
+}
+
+.single-product {
+  @include margins;
+
+  .sp-container {
+    width: 100%;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+    .first-image-sp {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 2%;
+
+      @media (max-width: $breakpoint-md) {
+        flex-direction: column;
+      }
+
+      h1 {
+        margin-top: 0;
+        text-align: start;
+
+        @media (max-width: $breakpoint-md) {
+          margin-top: 0.8rem;
+          margin-left: 0;
+        }
+      }
+
+      img {
+        width: 65%;
+        object-fit: cover;
+
+        @media (max-width: $breakpoint-md) {
+          width: 100%;
+        }
+      }
+
+      p {
+        line-height: 1.5rem;
+        margin-bottom: 0.625rem;
+
+        @media (max-width: $breakpoint-md) {
+          font-size: 1.2rem;
+        }
+
+        b {
+          font-weight: 700;
+        }
+      }
+
+      .product-info {
+        .color-options {
+          display: flex;
+          gap: 0.625rem;
+          margin-bottom: 1.5rem;
+          margin-top: 0.625rem;
+        }
+
+        .color-circle {
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+          display: inline-block;
+          border: 1px solid #000;
+          cursor: pointer;
+          transition: 0.4s;
+
+          .color-circle:hover {
+            opacity: 60%;
+            border: 2px solid #5a5a5a;
+          }
+        }
+
+        .color-circle:nth-child(1) {
+          background-color: $first-option-color;
+        }
+
+        .color-circle:nth-child(2) {
+          background-color: $second-option-color;
+        }
+
+        .color-circle:nth-child(3) {
+          background-color: $third-option-color;
+        }
+
+        .color-circle:nth-child(4) {
+          background-color: $fourth-option-color;
+        }
+
+        .color-circle:nth-child(5) {
+          background-color: $fifth-option-color;
+        }
+
+        .color-circle:nth-child(5) {
+          background-color: $sixth-option-color;
+        }
+
+        .product-options-checkbox {
+          display: flex;
+          flex-direction: column;
+          gap: 0.4rem;
+
+          @media (max-width: $breakpoint-md) {
+            margin-top: 1.8rem;
+            margin-bottom: 1.8rem;
+          }
+
+          .upgrade-option {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.6rem;
+
+            @media (max-width: $breakpoint-md) {
+              color: #9c9c9c;
+            }
+
+            font-family: "Inter", "sans-serif";
+
+            input {
+              margin: 0;
+              width: 1.2rem;
+              aspect-ratio: 1;
+              border: 0.5px #9c9c9c;
+
+              @media (max-width: $breakpoint-md) {
+                width: 1.5rem;
+              }
+            }
+
+            label {
+              display: inline-flex;
+              align-self: center;
+              font-weight: 200;
+
+              @media (max-width: $breakpoint-md) {
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          .add-to-cart {
+            padding-top: 200px;
+            display: flex;
+            justify-content: end;
+
+            .primary-button {
+              justify-content: end;
+            }
+          }
+        }
+      }
+    }
+
+    .product-description {
+      h1 {
+        margin-left: 0;
+        text-align: start;
+      }
+
+      .product-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+
+        .dimensions {
+          width: 45%;
+          display: grid;
+         align-items: center;
+          grid-template-columns: 1fr 1fr;
+          
+          @media (max-width: $breakpoint-md) {
+
+            width:100%;
+          }
+
+          .first-col {
+
+            text-align: start;
+          }
+
+          .second-col {
+
+            text-align: end;
+          }
+
+          span { 
+
+            color: #9C9C9C;
+            border-bottom: 0.5px solid #9C9C9C;
+            padding-bottom:15px;
+            padding-top:15px;
+
+           
+
+          }
+        }
+
+        img {
+          width: 50%;
+          object-fit: contain;
+
+          @media (max-width: $breakpoint-md) {
+            width: 100%;
+          }
+        }
+      }
+
+      .about {
+
+
+        .about-details {
+          margin-top: 5%;
+          margin-bottom: 5%;
+          display: flex;
+          flex-direction: row;
+          gap:5%;
+          column-gap: 5%;
+
+
+          @media (max-width: $breakpoint-md) {
+
+            flex-direction: column;
+            
+          }
+
+          p {
+
+            font-size: 0.8rem;
+          }
+
+          .detail {
+
+            @media (max-width: $breakpoint-md) {
+            margin-bottom: 5%;
+          }
+          }
+
+
+        }
+
+        .key-features {
+
+          width: 100%;
+          
+
+          .icon-features {
+
+            display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap:1rem;
+          flex-wrap: wrap;
+
+          .feature {
+            width: 7.5rem;
+            display: flex;
+            flex-direction: column;
+           
+         
+
+            img {
+            width: 100%;
+            }
+
+            p {
+
+              text-align: center;
+            }
+
+          }
+
+
+          }
+
+        }
+
+        .video-info {
+          margin-top: 5%;
+          display: flex;
+          flex-direction: row;
+
+          @media (max-width: $breakpoint-md) {
+
+            flex-direction: column;
+          }
+
+
+
+          video {
+
+            width: 45%;
+            height: 32rem;
+            object-fit: cover;
+
+            @media (max-width: $breakpoint-md) {
+
+              width: 100%;
+            }
+          }
+
+          .detail {
+
+             margin-left: 5%;
+              margin-top: 0;
+
+              @media (max-width: $breakpoint-md) {
+
+                margin-left: 0%;
+              }
+
+
+
+            h1 {
+             
+              margin-top: 0%;
+
+              @media (max-width: $breakpoint-md) {
+
+                margin-left: 0%;
+                margin-top: 5%;
+              }
+
+            }
+
+            .about-details {
+
+              .detail {
+
+                margin-left: 0%;
+                margin-top: 5%;
+
+              }
+
+            }
+
+
+          }
+
+        }
+
+        .bottom-video {
+          margin-top: 5%;
+          display: flex;
+          flex-direction: row;
+          gap: 5%;
+
+          @media (max-width: $breakpoint-md) {
+
+            display: none;
+
+          }
+
+
+
+          video {
+
+            width: 45%;
+            height:32rem;
+            object-fit: cover;
+  
+          }
+
+
+          .about-details {
+
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+           
+
+          .detail {
+
+            margin-top: 5%;
+            margin-left: 0%;
+            margin-right: 5%;
+
+            h1 {
+
+              margin-top: 0%;
+              margin-left: 0%;
+              margin-right: 5%;
+            }
+
+            p {
+
+              margin-right: 5%;
+
+            }
+
+          
+          }
+        }
+        }
+        
+
+      }
+
     }
   }
 }
