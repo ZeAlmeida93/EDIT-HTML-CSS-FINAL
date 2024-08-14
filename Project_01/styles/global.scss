@@ -136,6 +136,10 @@ header {
     @media (max-width: $breakpoint-md) {
       min-height: 72dvh;
     }
+
+    @media (max-width: $breakpoint-sm) {
+      min-height: 82dvh;
+    }
   }
 
   .text-description {
@@ -283,6 +287,10 @@ header {
     height: 52dvh;
   }
 
+  @media (max-width: $breakpoint-sm) {
+    height: 80dvh;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -336,46 +344,76 @@ header {
     gap: 2%;
     margin-bottom: 6%;
 
+    @media (max-width: $breakpoint-md) {
+      justify-content: start;
+      overflow-y: scroll;
+      gap: 0%;
+    }
+
     .gallery-img {
       max-width: 20%;
+
+      @media (max-width: $breakpoint-md) {
+        max-width: 42%;
+        margin-left: 2%;
+      }
     }
   }
 }
 .nomad-section {
   background-color: ($secondary-background-color);
 
-  .description-nomad {
-    width: 60%;
-    align-content: center;
-    align-self: start;
-    gap: 4rem;
-
-    justify-content: center;
-    @include margins;
-
-    .title-nomad {
-      font-size: large;
-      font-family: "Inter";
-      font-style: italic;
-      text-decoration: underline;
-      letter-spacing: 16px;
+  .nomad-container {
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
     }
 
-    .text-nomad {
-      font-size: clamp(1.2rem, 0.9rem + 0.4486vw, 1.65rem);
-      font-weight: 200;
-      width: 50%;
-      line-height: 2rem;
-      font-style: italic;
+    .description-nomad {
+      width: 60%;
+      align-self: start;
+      gap: 4rem;
 
-      b {
-        font-weight: 600;
+      @media (max-width: $breakpoint-md) {
+        width: 90%;
+        margin-bottom: 0%;
+      }
+
+      justify-content: center;
+      @include margins;
+
+      .title-nomad {
+        font-size: large;
+        font-family: "Inter";
+        font-style: italic;
+        text-decoration: underline;
+        letter-spacing: 16px;
+      }
+
+      .text-nomad {
+        font-size: clamp(1.2rem, 0.9rem + 0.4486vw, 1.65rem);
+        font-weight: 200;
+        width: 50%;
+        line-height: 2rem;
+        font-style: italic;
+
+        @media (max-width: $breakpoint-md) {
+          width: 80%;
+        }
+
+        b {
+          font-weight: 600;
+        }
       }
     }
-  }
 
-  img {
-    width: 40%;
+    img {
+      width: 40%;
+
+      @media (max-width: $breakpoint-md) {
+        width: 85%;
+        align-self: end;
+      }
+    }
   }
 }
 
@@ -386,13 +424,32 @@ header {
     overflow: scroll;
     margin-right: 0;
 
-    img {
-      width: 30%;
-      object-fit: cover;
-      border-radius: 8px;
+    @media (max-width: $breakpoint-md) {
+      margin: 0%;
+    }
+
+    .social-gallery-container {
+      img {
+        width: 30%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
 
       @media (max-width: $breakpoint-md) {
-        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 0%;
+
+        img {
+          width: 30%;
+          object-fit: cover;
+          border-radius: 8px;
+
+          @media (max-width: $breakpoint-md) {
+            width: 42%;
+          }
+        }
       }
     }
   }
@@ -427,7 +484,11 @@ header {
 
     @media (max-width: $breakpoint-md) {
       align-self: center;
-      width:100%;
+      width: 100%;
+      padding-left: 0%;
+      padding-right: 0%;
+      padding-top: 5%;
+      padding-bottom: 5%;
     }
 
     .input-container {
@@ -440,8 +501,12 @@ header {
       align-items: center;
 
       @media (max-width: $breakpoint-md) {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
+        align-self: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       input {
@@ -466,7 +531,10 @@ header {
         padding: 15px;
         color: #f7eee3;
 
-       
+        @media (max-width: $breakpoint-md) {
+          width: 100%;
+          text-align: center;
+        }
       }
 
       .subscription-button {
@@ -498,6 +566,14 @@ header {
       img {
         width: 3.8rem;
       }
+    }
+  }
+
+  .subscription-button-mobile {
+    display: none;
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
     }
   }
 }

@@ -214,6 +214,11 @@ header nav .title-menu:hover {
     min-height: 72dvh;
   }
 }
+@media (max-width: 380px) {
+  .hero-section img {
+    min-height: 82dvh;
+  }
+}
 .hero-section .text-description {
   display: flex;
   flex-direction: column;
@@ -334,6 +339,11 @@ header nav .title-menu:hover {
     height: 52dvh;
   }
 }
+@media (max-width: 380px) {
+  .orange-section {
+    height: 80dvh;
+  }
+}
 .orange-section .container {
   display: flex;
   flex-direction: row;
@@ -387,16 +397,33 @@ header nav .title-menu:hover {
   gap: 2%;
   margin-bottom: 6%;
 }
+@media (max-width: 768px) {
+  .gallery-section .gallery-container {
+    justify-content: start;
+    overflow-y: scroll;
+    gap: 0%;
+  }
+}
 .gallery-section .gallery-container .gallery-img {
   max-width: 20%;
+}
+@media (max-width: 768px) {
+  .gallery-section .gallery-container .gallery-img {
+    max-width: 42%;
+    margin-left: 2%;
+  }
 }
 
 .nomad-section {
   background-color: #F7EEE3;
 }
-.nomad-section .description-nomad {
+@media (max-width: 768px) {
+  .nomad-section .nomad-container {
+    flex-direction: column;
+  }
+}
+.nomad-section .nomad-container .description-nomad {
   width: 60%;
-  align-content: center;
   align-self: start;
   gap: 4rem;
   justify-content: center;
@@ -405,25 +432,42 @@ header nav .title-menu:hover {
   margin-left: 5%;
   margin-right: 5%;
 }
-.nomad-section .description-nomad .title-nomad {
+@media (max-width: 768px) {
+  .nomad-section .nomad-container .description-nomad {
+    width: 90%;
+    margin-bottom: 0%;
+  }
+}
+.nomad-section .nomad-container .description-nomad .title-nomad {
   font-size: large;
   font-family: "Inter";
   font-style: italic;
   text-decoration: underline;
   letter-spacing: 16px;
 }
-.nomad-section .description-nomad .text-nomad {
+.nomad-section .nomad-container .description-nomad .text-nomad {
   font-size: clamp(1.2rem, 0.9rem + 0.4486vw, 1.65rem);
   font-weight: 200;
   width: 50%;
   line-height: 2rem;
   font-style: italic;
 }
-.nomad-section .description-nomad .text-nomad b {
+@media (max-width: 768px) {
+  .nomad-section .nomad-container .description-nomad .text-nomad {
+    width: 80%;
+  }
+}
+.nomad-section .nomad-container .description-nomad .text-nomad b {
   font-weight: 600;
 }
-.nomad-section img {
+.nomad-section .nomad-container img {
   width: 40%;
+}
+@media (max-width: 768px) {
+  .nomad-section .nomad-container img {
+    width: 85%;
+    align-self: end;
+  }
 }
 
 .social-feed-section .social-gallery {
@@ -434,15 +478,34 @@ header nav .title-menu:hover {
   overflow: scroll;
   margin-right: 0;
 }
-.social-feed-section .social-gallery img {
+@media (max-width: 768px) {
+  .social-feed-section .social-gallery {
+    margin: 0%;
+  }
+}
+.social-feed-section .social-gallery .social-gallery-container img {
   width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
 }
 @media (max-width: 768px) {
-  .social-feed-section .social-gallery img {
-    width: 80%;
+  .social-feed-section .social-gallery .social-gallery-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0%;
+  }
+  .social-feed-section .social-gallery .social-gallery-container img {
+    width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .social-feed-section .social-gallery .social-gallery-container img {
+    width: 42%;
   }
 }
 
@@ -478,6 +541,10 @@ header nav .title-menu:hover {
   .subscribe .subscribe-container {
     align-self: center;
     width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 .subscribe .subscribe-container .input-container {
@@ -491,8 +558,12 @@ header nav .title-menu:hover {
 }
 @media (max-width: 768px) {
   .subscribe .subscribe-container .input-container {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .subscribe .subscribe-container .input-container input {
@@ -518,6 +589,12 @@ header nav .title-menu:hover {
   width: 14rem;
   padding: 15px;
   color: #f7eee3;
+}
+@media (max-width: 768px) {
+  .subscribe .subscribe-container .input-container .input-type {
+    width: 100%;
+    text-align: center;
+  }
 }
 .subscribe .subscribe-container .input-container .subscription-button {
   height: inherit;
@@ -546,6 +623,14 @@ header nav .title-menu:hover {
 }
 .subscribe .subscribe-container .social-icons img {
   width: 3.8rem;
+}
+.subscribe .subscription-button-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .subscribe .subscription-button-mobile {
+    display: none;
+  }
 }
 
 .footer {
