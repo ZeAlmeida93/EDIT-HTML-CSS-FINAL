@@ -151,7 +151,8 @@ header {
     left: 10%;
 
     @media (max-width: $breakpoint-md) {
-      top: 72%;
+      top: auto;
+      bottom: 15%;
 
       .hero-section-text-description {
         width: 60%;
@@ -159,9 +160,10 @@ header {
     }
 
     @media (max-width: $breakpoint-sm) {
-      top: 68%;
+      top: auto;
+      bottom: 15%;
+    }
   }
-}
 }
 .categories {
   margin-top: 5%;
@@ -187,10 +189,19 @@ header {
       display: flex;
       flex-shrink: 1;
       flex-grow: 0;
-      width: 390px;
-      height: 220px;
+      width: 30%;
+      height: auto;
       overflow: hidden;
       margin-bottom: 2%;
+
+      picture {
+        background-color: #f5f3f1;
+      }
+
+      @media (max-width: $breakpoint-md) {
+        width: 46%;
+        height: fit-content;
+      }
 
       img {
         display: flex;
@@ -382,6 +393,7 @@ header {
       @media (max-width: $breakpoint-md) {
         width: 90%;
         margin-bottom: 0%;
+        margin-top: 8%;
       }
 
       justify-content: center;
@@ -695,6 +707,90 @@ header {
         &:hover {
           text-decoration: underline;
         }
+      }
+    }
+  }
+}
+
+//PRODUCT LIST
+
+.title-pl-container {
+  @include paddings;
+  h1 {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: start;
+  }
+
+  p {
+    display: inline-block;
+    width: 45%;
+    line-height: 1.2rem;
+
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
+}
+
+.product-list {
+  @include paddings;
+  width: 87%;
+  padding-top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  .product-list-container {
+    width: calc(90% / 3);
+
+    @media (max-width: $breakpoint-md) {
+      width: calc(90% / 2);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      width: calc(90% / 1);
+    }
+
+    img {
+      width: 112%;
+      transition: 0.4s;
+
+      .product-image {
+      
+      .product-image:hover {
+        cursor: pointer;
+
+
+      }
+
+
+      }
+
+
+      img:hover {
+        cursor: pointer;
+      }
+    }
+
+    .product-description {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-size: clamp(0.7rem, 0.7664rem + 0.9969vw, 1rem);
+        width: inherit;
+        margin-top: 5%;
+      }
+
+      span {
+        font-size: clamp(0.85rem, 0.3897rem + 0.8972vw, 0.9rem);
+        margin-top: 2%;
+        width: inherit;
+        line-height: 1rem;
+        color: #9C9C9C;
       }
     }
   }

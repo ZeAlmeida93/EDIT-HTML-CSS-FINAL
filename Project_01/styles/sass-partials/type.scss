@@ -1,14 +1,13 @@
-@import 'variables.scss';
-@import 'breakpoints.scss';
+@import "variables.scss";
+@import "breakpoints.scss";
 
-
-html{
+html {
   font-size: clamp(0.875rem, 0.7874rem + 0.3738vw, 1.25rem);
 }
 
 h1 {
   font-family: "Inter", "sans-serif";
-  // font-size: 36px; 
+  // font-size: 36px;
   font-size: clamp(1.3rem, 1.45rem + 0.8988vw, 2.85rem);
   text-align: center;
   margin-top: 5%;
@@ -17,8 +16,14 @@ h1 {
   @media (max-width: $breakpoint-md) {
     margin-top: 10%;
     margin-bottom: 11%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
 
+  @media (max-width: $breakpoint-sm) {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
 }
 
 h3 {
@@ -28,14 +33,18 @@ h3 {
   font-size: 1.75rem;
 }
 
-p {
+h4 {
 
   font-family: "Inter", "sans-serif";
+  font-weight: 500;
+  line-height: 1rem;
+}
 
+p {
+  font-family: "Inter", "sans-serif";
+  line-height: 1rem;
 }
 
 span {
-
   font-family: "Inter", "sans-serif";
-
 }

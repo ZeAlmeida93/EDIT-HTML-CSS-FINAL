@@ -75,6 +75,14 @@ h1 {
   h1 {
     margin-top: 10%;
     margin-bottom: 11%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    margin-left: 12%;
+    margin-right: 12%;
   }
 }
 
@@ -84,8 +92,15 @@ h3 {
   font-size: 1.75rem;
 }
 
+h4 {
+  font-family: "Inter", "sans-serif";
+  font-weight: 500;
+  line-height: 1rem;
+}
+
 p {
   font-family: "Inter", "sans-serif";
+  line-height: 1rem;
 }
 
 span {
@@ -229,7 +244,8 @@ header nav .title-menu:hover {
 }
 @media (max-width: 768px) {
   .hero-section .text-description {
-    top: 72%;
+    top: auto;
+    bottom: 15%;
   }
   .hero-section .text-description .hero-section-text-description {
     width: 60%;
@@ -237,7 +253,8 @@ header nav .title-menu:hover {
 }
 @media (max-width: 380px) {
   .hero-section .text-description {
-    top: 68%;
+    top: auto;
+    bottom: 15%;
   }
 }
 
@@ -266,10 +283,20 @@ header nav .title-menu:hover {
   display: flex;
   flex-shrink: 1;
   flex-grow: 0;
-  width: 390px;
-  height: 220px;
+  width: 30%;
+  height: auto;
   overflow: hidden;
   margin-bottom: 2%;
+}
+.categories .category-wrapper .product-card picture {
+  background-color: #f5f3f1;
+}
+@media (max-width: 768px) {
+  .categories .category-wrapper .product-card {
+    width: 46%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 .categories .category-wrapper .product-card img {
   display: flex;
@@ -444,6 +471,7 @@ header nav .title-menu:hover {
   .nomad-section .nomad-container .description-nomad {
     width: 90%;
     margin-bottom: 0%;
+    margin-top: 8%;
   }
 }
 .nomad-section .nomad-container .description-nomad .title-nomad {
@@ -746,4 +774,80 @@ header nav .title-menu:hover {
 }
 .footer .footer-bottom p a:hover {
   text-decoration: underline;
+}
+
+.title-pl-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.title-pl-container h1 {
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: start;
+}
+.title-pl-container p {
+  display: inline-block;
+  width: 45%;
+  line-height: 1.2rem;
+}
+@media (max-width: 768px) {
+  .title-pl-container p {
+    width: 100%;
+  }
+}
+
+.product-list {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 87%;
+  padding-top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.product-list .product-list-container {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .product-list .product-list-container {
+    width: 45%;
+  }
+}
+@media (max-width: 380px) {
+  .product-list .product-list-container {
+    width: 90%;
+  }
+}
+.product-list .product-list-container img {
+  width: 112%;
+  transition: 0.4s;
+}
+.product-list .product-list-container img .product-image .product-image:hover {
+  cursor: pointer;
+}
+.product-list .product-list-container img img:hover {
+  cursor: pointer;
+}
+.product-list .product-list-container .product-description {
+  display: flex;
+  flex-direction: column;
+}
+.product-list .product-list-container .product-description h4 {
+  font-size: clamp(0.7rem, 0.7664rem + 0.9969vw, 1rem);
+  width: inherit;
+  margin-top: 5%;
+}
+.product-list .product-list-container .product-description span {
+  font-size: clamp(0.85rem, 0.3897rem + 0.8972vw, 0.9rem);
+  margin-top: 2%;
+  width: inherit;
+  line-height: 1rem;
+  color: #9C9C9C;
 }/*# sourceMappingURL=global.css.map */
