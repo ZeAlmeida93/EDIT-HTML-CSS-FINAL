@@ -229,10 +229,15 @@ header nav .title-menu:hover {
 }
 @media (max-width: 768px) {
   .hero-section .text-description {
-    top: 60%;
+    top: 72%;
   }
   .hero-section .text-description .hero-section-text-description {
     width: 60%;
+  }
+}
+@media (max-width: 380px) {
+  .hero-section .text-description {
+    top: 68%;
   }
 }
 
@@ -329,6 +334,7 @@ header nav .title-menu:hover {
 
 .orange-section {
   display: flex;
+  justify-content: center;
   width: 100%;
   min-height: 256px;
   background-color: #f7eee3;
@@ -352,9 +358,11 @@ header nav .title-menu:hover {
   gap: 5%;
   margin-left: 2%;
   margin-right: 2%;
+  width: 88%;
 }
 @media (max-width: 768px) {
   .orange-section .container {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     gap: 10%;

@@ -151,15 +151,18 @@ header {
     left: 10%;
 
     @media (max-width: $breakpoint-md) {
-      top: 60%;
+      top: 72%;
 
       .hero-section-text-description {
         width: 60%;
       }
     }
+
+    @media (max-width: $breakpoint-sm) {
+      top: 68%;
   }
 }
-
+}
 .categories {
   margin-top: 5%;
 
@@ -278,6 +281,7 @@ header {
 
 .orange-section {
   display: flex;
+  justify-content: center;
   width: 100%;
   min-height: 256px;
   background-color: #f7eee3;
@@ -300,8 +304,10 @@ header {
     gap: 5%;
     margin-left: 2%;
     margin-right: 2%;
+    width: 88%;
 
     @media (max-width: $breakpoint-md) {
+      width: 100%;
       flex-direction: column;
       justify-content: center;
       gap: 10%;
